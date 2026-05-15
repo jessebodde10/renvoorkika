@@ -10,6 +10,9 @@ out/
 .env.local
 .env*.local
 
+# Lockfile (laat Vercel zelf installeren)
+package-lock.json
+
 # Misc
 .DS_Store
 *.log
