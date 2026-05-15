@@ -5,6 +5,7 @@ import KikaSection from '@/components/KikaSection'
 import ImpactDashboard from '@/components/ImpactDashboard'
 import PhotoGallery from '@/components/PhotoGallery'
 import SponsorSection from '@/components/SponsorSection'
+import SponsorsSection from '@/components/SponsorsSection'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <KikaSection />
         <ImpactDashboard />
         <PhotoGallery />
+        <SponsorsSection />
         <SponsorSection />
       </main>
     </>

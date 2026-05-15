@@ -36,6 +36,9 @@ export default function NavBar() {
           <a href="#galerij" className="hover:text-white transition-colors duration-150">
             Galerij
           </a>
+          <a href="#sponsors" className="hover:text-white transition-colors duration-150">
+            Sponsors
+          </a>
           <a href="#sponsor" className="hover:text-white transition-colors duration-150">
             Doneer
           </a>
