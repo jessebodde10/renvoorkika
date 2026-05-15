@@ -1,6 +1,6 @@
 export default function KikaSection() {
   return (
-    <section className="bg-kika-navy py-24 px-4">
+    <section id="kika" className="bg-kika-navy py-24 px-4">
       <div className="max-w-3xl mx-auto">
 
         {/* Koptekst */}

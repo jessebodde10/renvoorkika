@@ -12,7 +12,7 @@ export default function SponsorSection() {
           </p>
           <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
             Jij hoeft niet te rennen om{' '}
-            <span className="text-kika-orange">het verschil te maken</span>
+            <span className="text-kika-orange whitespace-nowrap">het verschil te maken</span>
           </h2>
         </div>
 
@@ -58,7 +58,7 @@ export default function SponsorSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-white/50 hover:text-white/80
                        font-medium text-base transition-colors duration-200
-                       w-full sm:w-auto justify-center gap-1.5"
+                       w-full sm:w-auto justify-center"
           >
             Meer over KiKa
             <ExternalLink className="w-4 h-4" />

@@ -30,6 +30,9 @@ export default function NavBar() {
           <a href="#verhaal" className="hover:text-white transition-colors duration-150">
             Verhaal
           </a>
+          <a href="#kika" className="hover:text-white transition-colors duration-150">
+            KiKa
+          </a>
           <a href="#galerij" className="hover:text-white transition-colors duration-150">
             Galerij
           </a>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 type Photo = {
   src: string
   alt: string
-  city: 'New York' | 'Berlijn'
+  city: 'New York' | 'Berlijn' | 'Chicago'
 }
 
 const PHOTOS: Photo[] = [
