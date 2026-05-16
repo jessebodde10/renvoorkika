@@ -40,7 +40,7 @@ export default function VerhaalSection() {
             </p>
             <p>
               Na New York en Berlijn is Chicago mijn derde grote marathon voor
-              KiKa. Mijn doel is om nog eens €5.000 op te halen voor
+              KiKa. Mijn doel is om nog eens €7.500 op te halen voor
               kinderkankeronderzoek. Voor elk kind dat kanker te vroeg leerde
               kennen.
             </p>

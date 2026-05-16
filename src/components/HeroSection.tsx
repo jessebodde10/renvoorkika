@@ -3,7 +3,7 @@ import { ChevronDown, ArrowRight } from 'lucide-react'
 
 const CHICAGO_URL = 'https://supporta.com/19cn/ipgbtyhbi7'
 const PERSONAL_TOTAL = 11750
-const CHICAGO_GOAL = 5000
+const CHICAGO_GOAL = 7500
 
 export default function HeroSection() {
   const pct = Math.min(Math.round((PERSONAL_TOTAL / (PERSONAL_TOTAL + CHICAGO_GOAL)) * 100), 100)
