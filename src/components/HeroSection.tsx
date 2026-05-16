@@ -57,7 +57,7 @@ export default function HeroSection() {
               style={{ width: `${pct}%` }}
             />
           </div>
-          <p className="text-white/50 text-xs">Chicago · Oktober 2026 · nog €{CHICAGO_GOAL.toLocaleString('nl-NL')} te gaan</p>
+          <p className="text-white/50 text-xs">Chicago · 11 Oktober 2026 · nog €{CHICAGO_GOAL.toLocaleString('nl-NL')} te gaan</p>
         </div>
 
         {/* Knoppen */}

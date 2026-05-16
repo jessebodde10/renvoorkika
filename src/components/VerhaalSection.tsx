@@ -36,7 +36,7 @@ export default function VerhaalSection() {
               Volgende stop
             </p>
             <p className="text-white font-bold text-xl mb-2">
-              Chicago Marathon · 12 Oktober 2026
+              Chicago Marathon · 11 Oktober 2026
             </p>
             <p>
               Na New York en Berlijn is Chicago mijn derde grote marathon voor
