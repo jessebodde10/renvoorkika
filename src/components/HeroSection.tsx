@@ -2,11 +2,11 @@ import Image from 'next/image'
 import { ChevronDown, ArrowRight } from 'lucide-react'
 
 const CHICAGO_URL = 'https://supporta.com/19cn/ipgbtyhbi7'
-const PERSONAL_TOTAL = 11750
+const CHICAGO_RAISED = 0   // ← bijwerken zodra donaties binnenkomen
 const CHICAGO_GOAL = 7500
 
 export default function HeroSection() {
-  const pct = Math.min(Math.round((PERSONAL_TOTAL / (PERSONAL_TOTAL + CHICAGO_GOAL)) * 100), 100)
+  const pct = Math.min(Math.round((CHICAGO_RAISED / CHICAGO_GOAL) * 100), 100)
 
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
@@ -47,9 +47,9 @@ export default function HeroSection() {
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 mb-8 max-w-md mx-auto text-left">
           <div className="flex justify-between items-baseline mb-2">
             <span className="text-white font-bold text-lg">
-              €{PERSONAL_TOTAL.toLocaleString('nl-NL')} opgehaald
+              €{CHICAGO_RAISED.toLocaleString('nl-NL')} opgehaald
             </span>
-            <span className="text-white/50 text-sm">doel: €{(PERSONAL_TOTAL + CHICAGO_GOAL).toLocaleString('nl-NL')}</span>
+            <span className="text-white/50 text-sm">doel: €{CHICAGO_GOAL.toLocaleString('nl-NL')}</span>
           </div>
           <div className="w-full bg-white/20 rounded-full h-2.5 mb-2">
             <div
@@ -57,7 +57,7 @@ export default function HeroSection() {
               style={{ width: `${pct}%` }}
             />
           </div>
-          <p className="text-white/50 text-xs">Chicago · 11 Oktober 2026 · nog €{CHICAGO_GOAL.toLocaleString('nl-NL')} te gaan</p>
+          <p className="text-white/50 text-xs">Chicago · 11 Oktober 2026 · nog €{(CHICAGO_GOAL - CHICAGO_RAISED).toLocaleString('nl-NL')} te gaan</p>
         </div>
 
         {/* Knoppen */}
