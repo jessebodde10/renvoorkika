@@ -2,11 +2,8 @@ import Image from 'next/image'
 import { ChevronDown, ArrowRight } from 'lucide-react'
 
 const CHICAGO_URL = 'https://supporta.com/19cn/ipgbtyhbi7'
-const CHICAGO_RAISED = 0   // ← bijwerken zodra donaties binnenkomen
-const CHICAGO_GOAL = 7500
 
 export default function HeroSection() {
-  const pct = Math.min(Math.round((CHICAGO_RAISED / CHICAGO_GOAL) * 100), 100)
 
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
@@ -43,22 +40,6 @@ export default function HeroSection() {
           te vroeg met kanker te maken kreeg.
         </p>
 
-        {/* Voortgangsbalk Chicago */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 mb-8 max-w-md mx-auto text-left">
-          <div className="flex justify-between items-baseline mb-2">
-            <span className="text-white font-bold text-lg">
-              €{CHICAGO_RAISED.toLocaleString('nl-NL')} opgehaald
-            </span>
-            <span className="text-white/50 text-sm">doel: €{CHICAGO_GOAL.toLocaleString('nl-NL')}</span>
-          </div>
-          <div className="w-full bg-white/20 rounded-full h-2.5 mb-2">
-            <div
-              className="bg-kika-orange h-2.5 rounded-full transition-all"
-              style={{ width: `${pct}%` }}
-            />
-          </div>
-          <p className="text-white/50 text-xs">Chicago · 11 Oktober 2026 · nog €{(CHICAGO_GOAL - CHICAGO_RAISED).toLocaleString('nl-NL')} te gaan</p>
-        </div>
 
         {/* Knoppen */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
