@@ -61,14 +61,16 @@ export default function SponsorsSection() {
                     href={sponsor.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`Bezoek website van ${sponsor.name}`}
                     className="inline-flex items-center gap-1 text-kika-orange text-xs font-semibold
-                               hover:text-orange-400 transition-colors duration-150"
+                               hover:text-orange-400 transition-colors duration-150
+                               focus:outline-none focus:ring-2 focus:ring-kika-orange/50 rounded"
                   >
                     Bezoek website
-                    <ExternalLink className="w-3 h-3" />
+                    <ExternalLink className="w-3 h-3" aria-hidden="true" />
                   </a>
                 ) : (
-                  <span className="text-white/30 text-xs">Geen website</span>
+                  <span className="text-white/40 text-xs">Geen website</span>
                 )}
               </div>
             </div>

@@ -1,7 +1,13 @@
 import Image from 'next/image'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, ArrowRight } from 'lucide-react'
+
+const CHICAGO_URL = 'https://supporta.com/19cn/ipgbtyhbi7'
+const PERSONAL_TOTAL = 11750
+const CHICAGO_GOAL = 5000
 
 export default function HeroSection() {
+  const pct = Math.min(Math.round((PERSONAL_TOTAL / (PERSONAL_TOTAL + CHICAGO_GOAL)) * 100), 100)
+
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       <Image
@@ -26,23 +32,57 @@ export default function HeroSection() {
             New York · Berlijn · Chicago
           </p>
         </div>
+
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6">
           <span className="block">Mijn Marathon</span>
           <span className="block">tegen <span className="text-kika-orange">Kinderkanker</span></span>
         </h1>
-        <p className="text-lg md:text-xl text-white/80 mb-10 max-w-xl mx-auto leading-relaxed">
+
+        <p className="text-lg md:text-xl text-white/80 mb-8 max-w-xl mx-auto leading-relaxed">
           Ik ren voor de kinderen die dat zelf niet kunnen. Voor elk gezin dat
           te vroeg met kanker te maken kreeg.
         </p>
-        <a
-          href="#verhaal"
-          className="inline-block bg-kika-orange text-white font-bold text-lg px-10 py-4
-                     rounded-full shadow-2xl hover:bg-orange-500 active:scale-95
-                     transition-all duration-200 focus:outline-none focus:ring-4
-                     focus:ring-kika-orange/50"
-        >
-          Lees mijn verhaal
-        </a>
+
+        {/* Voortgangsbalk Chicago */}
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 mb-8 max-w-md mx-auto text-left">
+          <div className="flex justify-between items-baseline mb-2">
+            <span className="text-white font-bold text-lg">
+              €{PERSONAL_TOTAL.toLocaleString('nl-NL')} opgehaald
+            </span>
+            <span className="text-white/50 text-sm">doel: €{(PERSONAL_TOTAL + CHICAGO_GOAL).toLocaleString('nl-NL')}</span>
+          </div>
+          <div className="w-full bg-white/20 rounded-full h-2.5 mb-2">
+            <div
+              className="bg-kika-orange h-2.5 rounded-full transition-all"
+              style={{ width: `${pct}%` }}
+            />
+          </div>
+          <p className="text-white/50 text-xs">Chicago · Oktober 2026 · nog €{CHICAGO_GOAL.toLocaleString('nl-NL')} te gaan</p>
+        </div>
+
+        {/* Knoppen */}
+        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+          <a
+            href={CHICAGO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-kika-orange text-white font-bold text-lg px-10 py-4
+                       rounded-full shadow-2xl hover:bg-orange-500 active:scale-95
+                       transition-all duration-200 focus:outline-none focus:ring-4
+                       focus:ring-kika-orange/50 w-full sm:w-auto justify-center"
+            aria-label="Doneer voor KiKa via Supporta"
+          >
+            Doneer voor KiKa
+            <ArrowRight className="w-5 h-5" />
+          </a>
+          <a
+            href="#verhaal"
+            className="text-white/70 font-semibold text-base hover:text-white transition-colors duration-200
+                       focus:outline-none focus:ring-2 focus:ring-white/50 rounded-full px-4 py-2"
+          >
+            Lees mijn verhaal
+          </a>
+        </div>
       </div>
 
       {/* Scrolindicator */}

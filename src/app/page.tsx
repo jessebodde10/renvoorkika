@@ -6,12 +6,13 @@ import ImpactDashboard from '@/components/ImpactDashboard'
 import PhotoGallery from '@/components/PhotoGallery'
 import SponsorSection from '@/components/SponsorSection'
 import SponsorsSection from '@/components/SponsorsSection'
+import MobileNav from '@/components/MobileNav'
 
 export default function Home() {
   return (
     <>
       <NavBar />
-      <main>
+      <main className="pb-16 md:pb-0">
         <HeroSection />
         <VerhaalSection />
         <KikaSection />
@@ -20,6 +21,7 @@ export default function Home() {
         <SponsorsSection />
         <SponsorSection />
       </main>
+      <MobileNav />
     </>
   )
 }

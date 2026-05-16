@@ -13,6 +13,12 @@ export default function VerhaalSection() {
 
         <div className="space-y-6 text-white/75 text-lg leading-relaxed">
           <p>
+            Ik ben Jesse. Geen topsporter, geen professionele atleet. Gewoon
+            iemand die ergens voor wil staan. En dit is wat ik doe: ik ren
+            marathons voor KiKa, zodat kinderen met kanker een betere kans
+            krijgen.
+          </p>
+          <p>
             Elke keer als ik de startlijn overstap, denk ik aan de kinderen die
             in een ziekenhuisbed liggen terwijl leeftijdsgenoten buiten spelen.
             Aan de ouders die &apos;s nachts waken. Aan de artsen die vechten voor
@@ -23,10 +29,22 @@ export default function VerhaalSection() {
             te geven. Als mijn benen protesteren en ik geen adem meer heb, denk
             ik aan hen. En dan ga ik door.
           </p>
-          <p>
-            Na New York en Berlijn staat Chicago voor me. Niet als prestatie,
-            maar als marathon. Voor elk kind dat kanker te vroeg leerde kennen.
-          </p>
+
+          {/* Chicago-blok */}
+          <div className="bg-kika-navy rounded-2xl p-6 border border-white/10">
+            <p className="text-kika-orange font-semibold text-sm uppercase tracking-widest mb-3">
+              Volgende stop
+            </p>
+            <p className="text-white font-bold text-xl mb-2">
+              Chicago Marathon · 12 Oktober 2026
+            </p>
+            <p>
+              Na New York en Berlijn is Chicago mijn derde grote marathon voor
+              KiKa. Mijn doel is om nog eens €5.000 op te halen voor
+              kinderkankeronderzoek. Voor elk kind dat kanker te vroeg leerde
+              kennen.
+            </p>
+          </div>
         </div>
 
         <div className="mt-12 border-l-4 border-kika-orange pl-6">

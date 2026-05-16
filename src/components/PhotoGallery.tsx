@@ -81,10 +81,10 @@ export default function PhotoGallery() {
               {/* Hover-overlay */}
               <div className="absolute inset-0 bg-kika-navy/0 group-hover:bg-kika-navy/30 transition-colors duration-500" />
 
-              {/* Bijschrift bij hover */}
+              {/* Bijschrift: altijd zichtbaar op mobiel, hover op desktop */}
               <div
                 className="absolute bottom-0 left-0 right-0 p-3
-                           translate-y-full group-hover:translate-y-0
+                           md:translate-y-full md:group-hover:translate-y-0
                            transition-transform duration-300
                            bg-gradient-to-t from-kika-navy/90 to-transparent"
               >

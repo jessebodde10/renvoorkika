@@ -17,10 +17,13 @@ export default function AnimatedCounter({
   duration = 2000,
   className,
 }: AnimatedCounterProps) {
-  const [count, setCount] = useState(0)
+  // Start met de echte waarde zodat SSR/no-JS altijd het juiste getal toont
+  const [count, setCount] = useState(target)
   const ref = useRef<HTMLSpanElement>(null)
+  const animated = useRef(false)
 
   useEffect(() => {
+    if (animated.current) return
     const el = ref.current
     if (!el) return
 
@@ -28,7 +31,10 @@ export default function AnimatedCounter({
       ([entry]) => {
         if (!entry.isIntersecting) return
         observer.disconnect()
+        animated.current = true
 
+        // Reset naar 0 en animeer omhoog
+        setCount(0)
         let startTime: number | null = null
 
         const step = (now: number) => {

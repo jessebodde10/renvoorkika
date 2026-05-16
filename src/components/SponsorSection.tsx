@@ -23,8 +23,8 @@ export default function SponsorSection() {
             staan, en rennen is de manier waarop ik dat doe.
           </p>
           <p>
-            KiKa stopt elke euro in onderzoek naar kinderkanker. Niet in
-            kantoren of campagnes, gewoon in wetenschap. Kinderen die vroeger
+            KiKa financiert wetenschappelijk onderzoek naar betere behandelingen
+            en kwaliteit van zorg voor kinderen met kanker. Kinderen die vroeger
             geen kans hadden, overleven nu wel. Maar er is nog zoveel te doen.
           </p>
           <p>
@@ -67,7 +67,7 @@ export default function SponsorSection() {
 
         <p className="mt-8 text-white/25 text-xs">
           Je wordt doorgeleid naar mijn actiepagina op Supporta.
-          Donaties aan KiKa zijn fiscaal aftrekbaar.
+          Donaties aan KiKa zijn mogelijk fiscaal aftrekbaar, afhankelijk van je situatie.
         </p>
       </div>
     </section>

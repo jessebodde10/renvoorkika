@@ -28,28 +28,37 @@ export default function KikaSection() {
         {/* Tekst */}
         <div className="space-y-5 text-white/75 text-lg leading-relaxed">
           <p>
-            Jaarlijks krijgen bijna 600 kinderen in Nederland kanker. Momenteel
-            overleeft 81% van de kinderen. Dankzij het werk van KiKa steeg die
-            overlevingskans van 72% naar 81%. 100% genezing van kinderkanker,
-            dat is het doel.
+            Jaarlijks krijgen bijna 600 kinderen in Nederland kanker. De
+            overlevingskans steeg mede dankzij KiKa van 72% naar inmiddels
+            circa 84%. Het doel blijft 100% genezing van kinderkanker.
           </p>
           <p>
-            KiKa financiert wetenschappelijk onderzoek naar kinderkanker. Het
-            onderzoek richt zich op betere genezing, betere behandeling en
-            minder bijwerkingen. KiKa ondersteunt ook het Prinses Máxima
-            Centrum voor kinderoncologie.
+            KiKa financiert wetenschappelijk onderzoek naar betere behandelingen
+            en kwaliteit van zorg voor kinderen met kanker. KiKa ondersteunt
+            ook het Prinses Máxima Centrum voor kinderoncologie.
           </p>
         </div>
 
-        {/* Link naar KiKa */}
-        <div className="mt-10">
+        {/* Links */}
+        <div className="mt-10 flex flex-wrap gap-4 items-center">
           <a
             href="https://www.kika.nl"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-kika-orange font-semibold hover:text-orange-400 transition-colors duration-150"
+            className="text-kika-orange font-semibold hover:text-orange-400 transition-colors duration-150
+                       focus:outline-none focus:ring-2 focus:ring-kika-orange/50 rounded"
           >
             Meer lezen op kika.nl →
+          </a>
+          <a
+            href="https://www.kika.nl/over-kika/missie-visie-strategie/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/40 text-sm hover:text-white/70 transition-colors duration-150
+                       focus:outline-none focus:ring-2 focus:ring-white/30 rounded"
+            aria-label="Bron: KiKa missie, visie en strategie"
+          >
+            Bron: kika.nl/missie-visie-strategie
           </a>
         </div>
 
