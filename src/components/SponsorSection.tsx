@@ -11,26 +11,23 @@ export default function SponsorSection() {
             Loop met me mee
           </p>
           <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
-            Jij hoeft niet te rennen om{' '}
-            <span className="text-kika-orange whitespace-nowrap">het verschil te maken</span>
+            Mijn Stappen,{' '}
+            <span className="text-kika-orange">jouw Steun!</span>
           </h2>
         </div>
 
-        {/* Persoonlijke brief-stijl tekst */}
+        {/* Tekst */}
         <div className="space-y-5 text-white/75 text-lg leading-relaxed mb-12">
           <p>
-            Ik ben geen topsporter. Ik ben gewoon iemand die ergens voor wil
-            staan, en rennen is de manier waarop ik dat doe.
+            Jaarlijks krijgen bijna 600 kinderen in Nederland de diagnose kanker,
+            waarbij 1 op de 5 kinderen het niet overleeft. Kinderen zouden
+            zorgeloos moeten spelen, niet vechten tegen ziekte.
           </p>
           <p>
-            KiKa financiert wetenschappelijk onderzoek naar betere behandelingen
-            en kwaliteit van zorg voor kinderen met kanker. Kinderen die vroeger
-            geen kans hadden, overleven nu wel. Maar er is nog zoveel te doen.
-          </p>
-          <p>
-            Als je me wilt steunen, hoeveel het ook is, betekent dat echt wat.
-            Niet voor mij, maar voor een kind ergens in een ziekenhuis dat er
-            waarschijnlijk nooit van weet. Dat is genoeg voor mij.
+            Door te doneren aan KiKa, steun je wetenschappelijk onderzoek en
+            verbeterde behandelingen die de genezingskansen vergroten. Jouw
+            bijdrage draagt bij aan een toekomst waarin geen enkel kind de
+            strijd tegen kanker verliest.
           </p>
         </div>
 
