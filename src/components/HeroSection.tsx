@@ -12,7 +12,7 @@ export default function HeroSection() {
         alt="Jesse Bodde rennend door de Brandenburger Tor, Berlijn"
         fill
         priority
-        className="object-cover object-[50%_40%]"
+        className="object-cover object-[50%_25%]"
         sizes="100vw"
       />
 
