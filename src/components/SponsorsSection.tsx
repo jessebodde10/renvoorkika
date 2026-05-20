@@ -1,51 +1,22 @@
-'use client'
-
-import { useState } from 'react'
 import { ExternalLink } from 'lucide-react'
 
 type Sponsor = {
   name: string
   url?: string
-  domain?: string
   note?: string
 }
 
 const SPONSORS: Sponsor[] = [
-  { name: 'AGS',                          url: 'https://www.ags.nl/',                           domain: 'ags.nl' },
-  { name: 'Centuristics',                 url: 'https://centuristics.com/',                     domain: 'centuristics.com' },
+  { name: 'AGS',                          url: 'https://www.ags.nl/' },
+  { name: 'Centuristics',                 url: 'https://centuristics.com/' },
   { name: 'SL Freelance Solutions' },
-  { name: 'E-Freight Forwarding',         url: 'https://www.efreightforwarding.com/',           domain: 'efreightforwarding.com' },
-  { name: 'Cargomate',                    url: 'https://www.cargomate.nl/',                     domain: 'cargomate.nl' },
-  { name: 'Boloo',                        url: 'https://boloo.co/',                             domain: 'boloo.co' },
-  { name: 'Sir Winston',                  url: 'https://www.sirwinston.nl/',                    domain: 'sirwinston.nl' },
-  { name: 'Amaranthos Flowers',           url: 'https://amaranthosflowersbleiswijk.nl/',        domain: 'amaranthosflowersbleiswijk.nl' },
-  { name: 'Screenhouse',                  url: 'https://screenhouse.nl/',                       domain: 'screenhouse.nl', note: 'shirt bedrukking' },
+  { name: 'E-Freight Forwarding',         url: 'https://www.efreightforwarding.com/' },
+  { name: 'Cargomate',                    url: 'https://www.cargomate.nl/' },
+  { name: 'Boloo',                        url: 'https://boloo.co/' },
+  { name: 'Sir Winston',                  url: 'https://www.sirwinston.nl/' },
+  { name: 'Amaranthos Flowers',           url: 'https://amaranthosflowersbleiswijk.nl/' },
+  { name: 'Screenhouse',                  url: 'https://screenhouse.nl/', note: 'shirt bedrukking' },
 ]
-
-function SponsorLogo({ sponsor }: { sponsor: Sponsor }) {
-  const [failed, setFailed] = useState(false)
-  const initial = sponsor.name.charAt(0).toUpperCase()
-
-  if (!sponsor.domain || failed) {
-    return (
-      <div className="w-16 h-16 rounded-full bg-kika-orange/20 border border-kika-orange/30
-                      flex items-center justify-center mx-auto mb-4">
-        <span className="text-kika-orange text-2xl font-extrabold">{initial}</span>
-      </div>
-    )
-  }
-
-  return (
-    <div className="h-16 flex items-center justify-center mx-auto mb-4">
-      <img
-        src={`https://logo.clearbit.com/${sponsor.domain}`}
-        alt={`Logo van ${sponsor.name}`}
-        className="max-h-12 max-w-[120px] object-contain brightness-0 invert opacity-80"
-        onError={() => setFailed(true)}
-      />
-    </div>
-  )
-}
 
 export default function SponsorsSection() {
   return (
@@ -75,8 +46,6 @@ export default function SponsorsSection() {
             >
               <div className="h-0.5 bg-kika-orange/30 group-hover:bg-kika-orange transition-colors duration-200" />
               <div className="p-6 flex flex-col items-center text-center">
-
-                <SponsorLogo sponsor={sponsor} />
 
                 <p className="font-bold text-base leading-tight mb-1">{sponsor.name}</p>
                 {sponsor.note && (
