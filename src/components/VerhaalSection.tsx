@@ -40,12 +40,6 @@ export default function VerhaalSection() {
           </div>
         </div>
 
-        <div className="mt-12 border-l-4 border-kika-orange pl-6">
-          <p className="text-white text-xl font-semibold leading-relaxed">
-            &ldquo;Ik ren niet voor de finish. Ik ren voor de kinderen die er
-            zelf nooit kunnen staan.&rdquo;
-          </p>
-        </div>
       </div>
     </section>
   )
