@@ -52,7 +52,7 @@ export default function NavBar() {
                      text-sm px-5 py-2.5 rounded-full hover:bg-orange-500
                      transition-colors duration-200"
         >
-          Help mee
+          Mijn sponsorpagina
           <ArrowRight className="w-4 h-4" />
         </a>
       </div>
