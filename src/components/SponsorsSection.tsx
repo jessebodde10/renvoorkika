@@ -20,7 +20,7 @@ const SPONSORS: Sponsor[] = [
 
 export default function SponsorsSection() {
   return (
-    <section id="sponsors" className="bg-kika-navy py-20 px-4">
+    <section id="sponsors" className="bg-kika-navy-light py-20 px-4">
       <div className="max-w-5xl mx-auto">
 
         {/* Koptekst */}

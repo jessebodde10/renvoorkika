@@ -8,9 +8,12 @@ export default function KikaSection() {
           <p className="text-kika-orange font-semibold uppercase tracking-widest text-sm mb-3">
             Het goede doel
           </p>
-          <h2 className="text-3xl md:text-4xl font-extrabold">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
             Stichting Kinderen Kankervrij
           </h2>
+          <p className="text-white/60 text-lg max-w-xl mx-auto">
+            Elk jaar krijgen bijna 600 kinderen in Nederland kanker. KiKa strijdt voor 100% genezing.
+          </p>
         </div>
 
         {/* Video placeholder — vervang VIDEO_ID door het echte YouTube-ID */}

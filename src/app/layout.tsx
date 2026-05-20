@@ -9,13 +9,27 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: 'Mijn Marathon tegen Kinderkanker | KiKa',
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : 'http://localhost:3000'
+  ),
+  title: 'Marathon voor KiKa | Jesse Bodde',
   description:
-    'Ik ren marathons voor KiKa – New York, Berlijn en Chicago. Voor de kinderen die dat zelf niet kunnen.',
+    'Jesse Bodde rent marathons voor KiKa – New York, Berlijn en Chicago. Steun het onderzoek naar kinderkanker.',
   openGraph: {
-    title: 'Mijn Marathon tegen Kinderkanker',
-    description: 'Steun KiKa via marathon sponsoring.',
-    images: ['/berlijn-finish.jpg'],
+    title: 'Marathon voor KiKa | Jesse Bodde',
+    description:
+      'Jesse rent drie wereldmarathons voor KiKa. Elk gedoneerd euro gaat naar onderzoek voor kinderen met kanker.',
+    images: [{ url: '/berlijn-jesse.jpg', width: 1200, height: 630, alt: 'Jesse Bodde in Berlijn' }],
+    locale: 'nl_NL',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Marathon voor KiKa | Jesse Bodde',
+    description: 'Jesse rent drie wereldmarathons voor KiKa. Steun het onderzoek.',
+    images: ['/berlijn-jesse.jpg'],
   },
 }
 

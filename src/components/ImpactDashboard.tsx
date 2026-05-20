@@ -11,13 +11,13 @@ type RaceEntry = {
 const PAST_RACES: RaceEntry[] = [
   {
     city: 'New York',
-    year: '2023',
+    year: '2024',
     kikaTotal: 550576,
     personal: 7500,
   },
   {
     city: 'Berlijn',
-    year: '2024',
+    year: '2025',
     kikaTotal: 123639,
     personal: 4250,
   },

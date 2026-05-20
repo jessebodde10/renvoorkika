@@ -33,6 +33,9 @@ export default function NavBar() {
           <a href="#kika" className="hover:text-white transition-colors duration-150">
             KiKa
           </a>
+          <a href="#impact" className="hover:text-white transition-colors duration-150">
+            Impact
+          </a>
           <a href="#galerij" className="hover:text-white transition-colors duration-150">
             Galerij
           </a>

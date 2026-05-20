@@ -7,6 +7,7 @@ import PhotoGallery from '@/components/PhotoGallery'
 import SponsorSection from '@/components/SponsorSection'
 import SponsorsSection from '@/components/SponsorsSection'
 import MobileNav from '@/components/MobileNav'
+import ScrollToTop from '@/components/ScrollToTop'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <SponsorSection />
       </main>
       <MobileNav />
+      <ScrollToTop />
     </>
   )
 }
