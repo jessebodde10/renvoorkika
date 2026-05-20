@@ -22,14 +22,14 @@ export default function SponsorSection() {
             Stap samen met mij in de strijd tegen kinderkanker! Mijn deelname
             aan de marathon van Chicago is meer dan alleen een persoonlijke
             uitdaging; het is een kans om bij te dragen aan een groter doel.
-            Uw steun door middel van een donatie maakt echt het verschil.
+            Jouw steun door middel van een donatie maakt echt het verschil.
           </p>
           <p>
             Laten we samenwerken om de impact te vergroten en een verschil te
             maken in de levens van kinderen getroffen door kanker.
           </p>
           <p>
-            Elke euro die u doneert gaat naar KiKa en brengt ons dichterbij de
+            Elke euro die jij doneert gaat naar KiKa en brengt ons dichterbij de
             ultieme doelstelling: een wereld waarin 100% van de kinderen met
             kanker geneest.
           </p>
