@@ -20,12 +20,22 @@ const config: Config = {
       },
       keyframes: {
         'fade-up': {
-          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '0%':   { opacity: '0', transform: 'translateY(28px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'ken-burns': {
+          '0%':   { transform: 'scale(1.12)' },
+          '100%': { transform: 'scale(1)' },
+        },
+        'fade-in': {
+          '0%':   { opacity: '0' },
+          '100%': { opacity: '1' },
         },
       },
       animation: {
-        'fade-up': 'fade-up 0.6s ease-out forwards',
+        'fade-up':    'fade-up 0.75s ease-out both',
+        'ken-burns':  'ken-burns 9s ease-out forwards',
+        'fade-in':    'fade-in 1s ease-out both',
       },
     },
   },

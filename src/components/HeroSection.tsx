@@ -4,24 +4,32 @@ import { ChevronDown, ArrowRight } from 'lucide-react'
 const CHICAGO_URL = 'https://supporta.com/19cn/ipgbtyhbi7'
 
 export default function HeroSection() {
-
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-      <Image
-        src="/berlijn-jesse.jpg"
-        alt="Jesse Bodde rennend door de Brandenburger Tor, Berlijn"
-        fill
-        priority
-        className="object-cover object-[50%_25%]"
-        sizes="100vw"
-      />
 
-      {/* Donker verloopoverlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-kika-navy/70 via-kika-navy/50 to-kika-navy/85" />
+      {/* Achtergrond met Ken Burns zoom */}
+      <div className="absolute inset-0 animate-ken-burns origin-center">
+        <Image
+          src="/berlijn-jesse.jpg"
+          alt="Jesse Bodde rennend door de Brandenburger Tor, Berlijn"
+          fill
+          priority
+          className="object-cover object-[50%_25%]"
+          sizes="100vw"
+        />
+      </div>
 
-      {/* Inhoud */}
-      <div className="relative z-10 text-center px-4 max-w-3xl mx-auto animate-fade-up">
-        <div className="mb-4">
+      {/* Donker verloopoverlay — eigen fade-in zodat overlay niet meezoomt */}
+      <div className="absolute inset-0 bg-gradient-to-b from-kika-navy/70 via-kika-navy/50 to-kika-navy/85 animate-fade-in" />
+
+      {/* Inhoud — gestaffeld fade-up */}
+      <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
+
+        {/* Badge */}
+        <div
+          className="mb-4 animate-fade-up"
+          style={{ animationDelay: '0.1s' }}
+        >
           <p className="text-kika-orange font-semibold uppercase tracking-widest text-xs md:text-sm">
             KiKa Marathon
           </p>
@@ -30,15 +38,27 @@ export default function HeroSection() {
           </p>
         </div>
 
+        {/* Titel — twee regels met eigen vertraging */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6">
-          <span className="block">Mijn Marathon</span>
-          <span className="block">tegen <span className="text-kika-orange">Kinderkanker</span></span>
+          <span
+            className="block animate-fade-up"
+            style={{ animationDelay: '0.35s' }}
+          >
+            Mijn Marathon
+          </span>
+          <span
+            className="block animate-fade-up"
+            style={{ animationDelay: '0.55s' }}
+          >
+            tegen <span className="text-kika-orange">Kinderkanker</span>
+          </span>
         </h1>
 
-
-
         {/* Knoppen */}
-        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+        <div
+          className="flex flex-col sm:flex-row gap-3 justify-center items-center animate-fade-up"
+          style={{ animationDelay: '0.75s' }}
+        >
           <a
             href={CHICAGO_URL}
             target="_blank"
@@ -63,9 +83,15 @@ export default function HeroSection() {
       </div>
 
       {/* Scrolindicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ChevronDown className="w-7 h-7 text-white/50" />
+      <div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-up"
+        style={{ animationDelay: '1.1s' }}
+      >
+        <div className="animate-bounce">
+          <ChevronDown className="w-7 h-7 text-white/50" />
+        </div>
       </div>
+
     </section>
   )
 }
