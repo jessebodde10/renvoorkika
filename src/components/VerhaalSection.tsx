@@ -13,21 +13,16 @@ export default function VerhaalSection() {
 
         <div className="space-y-6 text-white/75 text-lg leading-relaxed">
           <p>
-            Ik ben Jesse. Geen topsporter, geen professionele atleet. Gewoon
-            iemand die ergens voor wil staan. En dit is wat ik doe: ik ren
-            marathons voor KiKa, zodat kinderen met kanker een betere kans
-            krijgen.
+            Ik ben Jesse Bodde (27) en mijn passie voor hardlopen zet ik het
+            liefst in voor het goede doel. Na de onvergetelijke marathon van
+            New York in 2024 en de indrukwekkende straten van Berlijn in 2025,
+            staat mijn volgende grote uitdaging alweer gepland: de marathon van
+            Chicago in 2026.
           </p>
           <p>
-            Elke keer als ik de startlijn overstap, denk ik aan de kinderen die
-            in een ziekenhuisbed liggen terwijl leeftijdsgenoten buiten spelen.
-            Aan de ouders die &apos;s nachts waken. Aan de artsen die vechten voor
-            elke dag extra.
-          </p>
-          <p>
-            Rennen is voor mij geen sport meer. Het is een manier om iets terug
-            te geven. Als mijn benen protesteren en ik geen adem meer heb, denk
-            ik aan hen. En dan ga ik door.
+            Waarom? Omdat er geen grotere motivatie bestaat dan rennen voor
+            wetenschappelijk onderzoek en betere behandelmethoden voor kinderen
+            met kanker. Steun jij mij weer op weg naar de finish in Chicago?
           </p>
 
           {/* Chicago-blok */}
@@ -39,10 +34,8 @@ export default function VerhaalSection() {
               Chicago Marathon · 11 Oktober 2026
             </p>
             <p>
-              Na New York en Berlijn is Chicago mijn derde grote marathon voor
-              KiKa. Mijn doel is om nog eens €7.500 op te halen voor
-              kinderkankeronderzoek. Voor elk kind dat kanker te vroeg leerde
-              kennen.
+              Mijn doel is om €7.500 op te halen voor kinderkankeronderzoek.
+              Voor elk kind dat kanker te vroeg leerde kennen.
             </p>
           </div>
         </div>
