@@ -8,11 +8,11 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       <Image
-        src="/berlijn-groep2.jpg"
-        alt="KiKa team Berlijn marathon"
+        src="/berlijn-jesse.jpg"
+        alt="Jesse Bodde rennend door de Brandenburger Tor, Berlijn"
         fill
         priority
-        className="object-cover object-[50%_55%]"
+        className="object-cover object-[50%_40%]"
         sizes="100vw"
       />
 
@@ -35,10 +35,6 @@ export default function HeroSection() {
           <span className="block">tegen <span className="text-kika-orange">Kinderkanker</span></span>
         </h1>
 
-        <p className="text-lg md:text-xl text-white/80 mb-8 max-w-xl mx-auto leading-relaxed">
-          Ik ren voor de kinderen die dat zelf niet kunnen. Voor elk gezin dat
-          te vroeg met kanker te maken kreeg.
-        </p>
 
 
         {/* Knoppen */}
