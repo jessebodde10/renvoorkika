@@ -1,26 +1,51 @@
+'use client'
+
+import { useState } from 'react'
 import { ExternalLink } from 'lucide-react'
 
 type Sponsor = {
   name: string
   url?: string
+  domain?: string
   note?: string
 }
 
 const SPONSORS: Sponsor[] = [
-  { name: 'AGS', url: 'https://www.ags.nl/' },
-  { name: 'Centuristics', url: 'https://centuristics.com/' },
+  { name: 'AGS',                          url: 'https://www.ags.nl/',                           domain: 'ags.nl' },
+  { name: 'Centuristics',                 url: 'https://centuristics.com/',                     domain: 'centuristics.com' },
   { name: 'SL Freelance Solutions' },
-  { name: 'E-Freight Forwarding', url: 'https://www.efreightforwarding.com/' },
-  { name: 'Cargomate', url: 'https://www.cargomate.nl/' },
-  { name: 'Boloo', url: 'https://boloo.co/' },
-  { name: 'Sir Winston', url: 'https://www.sirwinston.nl/' },
-  { name: 'Amaranthos Flowers Bleiswijk', url: 'https://amaranthosflowersbleiswijk.nl/' },
-  {
-    name: 'Screenhouse Textieldrukkers',
-    url: 'https://screenhouse.nl/',
-    note: 'shirt bedrukking',
-  },
+  { name: 'E-Freight Forwarding',         url: 'https://www.efreightforwarding.com/',           domain: 'efreightforwarding.com' },
+  { name: 'Cargomate',                    url: 'https://www.cargomate.nl/',                     domain: 'cargomate.nl' },
+  { name: 'Boloo',                        url: 'https://boloo.co/',                             domain: 'boloo.co' },
+  { name: 'Sir Winston',                  url: 'https://www.sirwinston.nl/',                    domain: 'sirwinston.nl' },
+  { name: 'Amaranthos Flowers',           url: 'https://amaranthosflowersbleiswijk.nl/',        domain: 'amaranthosflowersbleiswijk.nl' },
+  { name: 'Screenhouse',                  url: 'https://screenhouse.nl/',                       domain: 'screenhouse.nl', note: 'shirt bedrukking' },
 ]
+
+function SponsorLogo({ sponsor }: { sponsor: Sponsor }) {
+  const [failed, setFailed] = useState(false)
+  const initial = sponsor.name.charAt(0).toUpperCase()
+
+  if (!sponsor.domain || failed) {
+    return (
+      <div className="w-16 h-16 rounded-full bg-kika-orange/20 border border-kika-orange/30
+                      flex items-center justify-center mx-auto mb-4">
+        <span className="text-kika-orange text-2xl font-extrabold">{initial}</span>
+      </div>
+    )
+  }
+
+  return (
+    <div className="h-16 flex items-center justify-center mx-auto mb-4">
+      <img
+        src={`https://logo.clearbit.com/${sponsor.domain}`}
+        alt={`Logo van ${sponsor.name}`}
+        className="max-h-12 max-w-[120px] object-contain brightness-0 invert opacity-80"
+        onError={() => setFailed(true)}
+      />
+    </div>
+  )
+}
 
 export default function SponsorsSection() {
   return (
@@ -45,32 +70,34 @@ export default function SponsorsSection() {
           {SPONSORS.map((sponsor) => (
             <div
               key={sponsor.name}
-              className="relative bg-kika-navy-light border border-white/10 rounded-2xl overflow-hidden
-                         transition-all duration-200 hover:border-kika-orange/40 hover:bg-kika-navy-light/80"
+              className="bg-kika-navy-light border border-white/10 rounded-2xl overflow-hidden
+                         transition-all duration-200 hover:border-kika-orange/40 group"
             >
-              <div className="h-0.5 bg-kika-orange/40" />
-              <div className="p-5">
-                <p className="font-bold text-base leading-tight mb-1">
-                  {sponsor.name}
-                </p>
+              <div className="h-0.5 bg-kika-orange/30 group-hover:bg-kika-orange transition-colors duration-200" />
+              <div className="p-6 flex flex-col items-center text-center">
+
+                <SponsorLogo sponsor={sponsor} />
+
+                <p className="font-bold text-base leading-tight mb-1">{sponsor.name}</p>
                 {sponsor.note && (
-                  <p className="text-white/40 text-xs mb-2">{sponsor.note}</p>
+                  <p className="text-white/40 text-xs mb-3">{sponsor.note}</p>
                 )}
+
                 {sponsor.url ? (
                   <a
                     href={sponsor.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`Bezoek website van ${sponsor.name}`}
+                    aria-label={`Bezoek ${sponsor.name}`}
                     className="inline-flex items-center gap-1 text-kika-orange text-xs font-semibold
                                hover:text-orange-400 transition-colors duration-150
-                               focus:outline-none focus:ring-2 focus:ring-kika-orange/50 rounded"
+                               focus:outline-none focus:ring-2 focus:ring-kika-orange/50 rounded mt-1"
                   >
-                    Bezoek website
+                    Bezoek {sponsor.name}
                     <ExternalLink className="w-3 h-3" aria-hidden="true" />
                   </a>
                 ) : (
-                  <span className="text-white/40 text-xs">Geen website</span>
+                  <span className="text-white/30 text-xs mt-1">Geen website</span>
                 )}
               </div>
             </div>
