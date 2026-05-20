@@ -34,13 +34,13 @@ export default function ImpactDashboard() {
         {/* Koptekst */}
         <div className="text-center mb-14">
           <p className="text-kika-orange font-semibold uppercase tracking-widest text-sm mb-3">
-            De weg tot nu toe
+            De cijfers
           </p>
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4">
-            Wat we samen bereikten
+            Kilometers, euro's, impact
           </h2>
           <p className="text-white/60 text-lg max-w-xl mx-auto">
-            Elke marathon, elke stap, elke euro. Voor de kinderen.
+            Twee marathons gerend. Duizenden euro's opgehaald. Voor elk kind.
           </p>
         </div>
 
