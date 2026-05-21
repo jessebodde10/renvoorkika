@@ -10,13 +10,13 @@ const SPONSORS: Sponsor[] = [
   { name: 'AGS',                          url: 'https://www.ags.nl/' },
   { name: 'Centuristics',                 url: 'https://centuristics.com/' },
   { name: 'SL Freelance Solutions' },
+  { name: 'Paroc GmbH',                   url: 'https://www.paroc.com/en' },
   { name: 'E-Freight Forwarding',         url: 'https://www.efreightforwarding.com/' },
   { name: 'Cargomate',                    url: 'https://www.cargomate.nl/' },
   { name: 'Boloo',                        url: 'https://boloo.co/' },
   { name: 'Sir Winston',                  url: 'https://www.sirwinston.nl/' },
   { name: 'Amaranthos Flowers',           url: 'https://amaranthosflowersbleiswijk.nl/' },
   { name: 'Screenhouse',                  url: 'https://screenhouse.nl/', note: 'shirt bedrukking' },
-  { name: 'Paroc',                        url: 'https://www.paroc.com/en' },
 ]
 
 export default function SponsorsSection() {
