@@ -42,9 +42,6 @@ export default function NavBar() {
           <a href="#sponsors" className="hover:text-white transition-colors duration-150">
             Sponsors
           </a>
-          <a href="#sponsor" className="hover:text-white transition-colors duration-150">
-            Doneer
-          </a>
         </nav>
 
         <a
