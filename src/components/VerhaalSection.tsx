@@ -21,7 +21,7 @@ export default function VerhaalSection() {
             <p>
               Ik ben Jesse Bodde, 27 jaar. Hardlopen is mijn passie, maar sinds
               2024 is het ook mijn manier om iets te betekenen. Ik ren niet voor
-              PR's of podiumplekken — ik ren voor kinderen die dat zelf niet
+              PR's of podiumplekken. Ik ren voor kinderen die dat zelf niet
               kunnen.
             </p>
             <p>
@@ -34,7 +34,7 @@ export default function VerhaalSection() {
               Nu staat Chicago op het programma. Op 11 oktober 2026 loop ik mijn
               derde grote marathon, met een doel van €7.500 voor
               kinderkankeronderzoek. Elke euro die jij doneert gaat rechtstreeks
-              naar KiKa — en brengt ons een stap dichter bij 100% genezing.
+              naar KiKa en brengt ons een stap dichter bij 100% genezing.
             </p>
 
             {/* Chicago-blok */}

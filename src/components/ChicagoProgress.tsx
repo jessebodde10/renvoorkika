@@ -73,7 +73,7 @@ export default function ChicagoProgress() {
       {/* Percentage + CTA */}
       <div className="flex items-center justify-between">
         <p className="text-white/50 text-xs font-semibold">
-          {pct > 0 ? `${pct}% van het doel bereikt` : 'Inzameling gestart — wees de eerste!'}
+          {pct > 0 ? `${pct}% van het doel bereikt` : 'Inzameling gestart, wees de eerste!'}
         </p>
         <a
           href={CHICAGO_URL}
