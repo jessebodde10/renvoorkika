@@ -1,5 +1,6 @@
 import { Trophy, User, ArrowRight } from 'lucide-react'
 import AnimatedCounter from './AnimatedCounter'
+import ChicagoProgress from './ChicagoProgress'
 
 type RaceEntry = {
   city: string
@@ -68,6 +69,7 @@ export default function ImpactDashboard() {
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
+          <ChicagoProgress />
         </div>
 
         {/* Totaalbanner eerdere races */}
