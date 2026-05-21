@@ -31,7 +31,7 @@ export default function HeroSection() {
           style={{ animationDelay: '0.1s' }}
         >
           <p className="text-kika-orange font-semibold uppercase tracking-widest text-xs md:text-sm">
-            Jesse Bodde · 27 jaar
+            Jesse Bodde
           </p>
           <p className="text-white/60 font-semibold uppercase tracking-widest text-xs md:text-sm mt-1">
             New York 2024 · Berlijn 2025 · Chicago 2026
