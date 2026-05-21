@@ -20,7 +20,7 @@ export default function NavBar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-center md:justify-between">
         <a href="#" className="font-extrabold tracking-tight text-base md:text-lg whitespace-nowrap">
           <span className="text-kika-orange">Jesse</span>
           <span className="text-white"> rent voor KiKa</span>
