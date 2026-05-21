@@ -52,8 +52,8 @@ export default function VerhaalSection() {
             </div>
           </div>
 
-          {/* Foto */}
-          <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
+          {/* Foto — op mobiel bovenaan, op desktop rechts */}
+          <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl order-first md:order-last">
             <Image
               src="/jesse-medaille.jpg"
               alt="Jesse Bodde met medaille na de finish"
