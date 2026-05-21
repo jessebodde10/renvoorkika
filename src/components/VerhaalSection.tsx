@@ -34,8 +34,8 @@ export default function VerhaalSection() {
               Chicago Marathon · 11 oktober 2026
             </p>
             <p>
-              Mijn doel is om €7.500 op te halen voor kinderkankeronderzoek.
-              Voor elk kind dat kanker te vroeg leerde kennen.
+              De finish in Chicago wordt meer dan een persoonlijke mijlpaal.
+              Het is een stap richting een wereld zonder kinderkanker.
             </p>
           </div>
         </div>
