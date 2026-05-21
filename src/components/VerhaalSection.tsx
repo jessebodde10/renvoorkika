@@ -13,16 +13,22 @@ export default function VerhaalSection() {
 
         <div className="space-y-6 text-white/75 text-lg leading-relaxed">
           <p>
-            Ik ben Jesse Bodde (27) en mijn passie voor hardlopen zet ik het
-            liefst in voor het goede doel. Na de onvergetelijke marathon van
-            New York in 2024 en de indrukwekkende straten van Berlijn in 2025,
-            staat mijn volgende grote uitdaging alweer gepland: de marathon van
-            Chicago in 2026.
+            Ik ben Jesse Bodde, 27 jaar. Hardlopen is mijn passie, maar sinds
+            2024 is het ook mijn manier om iets te betekenen. Ik ren niet voor
+            PR's of podiumplekken — ik ren voor kinderen die dat zelf niet
+            kunnen.
           </p>
           <p>
-            Waarom? Omdat er geen grotere motivatie bestaat dan rennen voor
-            wetenschappelijk onderzoek en betere behandelmethoden voor kinderen
-            met kanker. Steun jij mij weer op weg naar de finish in Chicago?
+            In 2024 finishte ik de marathon van New York, in 2025 liep ik door
+            de straten van Berlijn. Beide keren voor KiKa, want elk jaar krijgen
+            bijna 600 kinderen in Nederland kanker en 1 op de 5 haalt het niet.
+            Dat zijn geen statistieken. Dat zijn kinderen.
+          </p>
+          <p>
+            Nu staat Chicago op het programma. Op 11 oktober 2026 loop ik mijn
+            derde grote marathon, met een doel van €7.500 voor
+            kinderkankeronderzoek. Elke euro die jij doneert gaat rechtstreeks
+            naar KiKa — en brengt ons een stap dichter bij 100% genezing.
           </p>
 
           {/* Chicago-blok */}

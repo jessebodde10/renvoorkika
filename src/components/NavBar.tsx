@@ -22,8 +22,8 @@ export default function NavBar() {
     >
       <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
         <a href="#" className="font-extrabold text-lg tracking-tight">
-          <span className="text-kika-orange">Marathon</span>
-          <span className="text-white"> voor KiKa</span>
+          <span className="text-kika-orange">Jesse</span>
+          <span className="text-white"> rent voor KiKa</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-white/70">

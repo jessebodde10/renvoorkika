@@ -14,21 +14,21 @@ export const metadata: Metadata = {
       ? `https://${process.env.VERCEL_URL}`
       : 'http://localhost:3000'
   ),
-  title: 'Marathon voor KiKa | Jesse Bodde',
+  title: 'Jesse rent voor KiKa',
   description:
-    'Jesse Bodde rent marathons voor KiKa – New York, Berlijn en Chicago. Steun het onderzoek naar kinderkanker.',
+    'Jesse Bodde (27) rent marathons voor KiKa – New York 2024, Berlijn 2025, Chicago 2026. Steun zijn actie voor kinderkankeronderzoek.',
   openGraph: {
-    title: 'Marathon voor KiKa | Jesse Bodde',
+    title: 'Jesse rent voor KiKa',
     description:
-      'Jesse rent drie wereldmarathons voor KiKa. Elk gedoneerd euro gaat naar onderzoek voor kinderen met kanker.',
+      'Jesse Bodde (27) rent drie wereldmarathons voor kinderkankeronderzoek. Doneer en help hem zijn doel van €7.500 te bereiken.',
     images: [{ url: '/berlijn-jesse.jpg', width: 1200, height: 630, alt: 'Jesse Bodde in Berlijn' }],
     locale: 'nl_NL',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Marathon voor KiKa | Jesse Bodde',
-    description: 'Jesse rent drie wereldmarathons voor KiKa. Steun het onderzoek.',
+    title: 'Jesse rent voor KiKa',
+    description: 'Jesse Bodde (27) rent drie wereldmarathons voor kinderkankeronderzoek. Doneer nu.',
     images: ['/berlijn-jesse.jpg'],
   },
 }
