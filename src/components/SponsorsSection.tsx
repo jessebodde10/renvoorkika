@@ -16,6 +16,7 @@ const SPONSORS: Sponsor[] = [
   { name: 'Sir Winston',                  url: 'https://www.sirwinston.nl/' },
   { name: 'Amaranthos Flowers',           url: 'https://amaranthosflowersbleiswijk.nl/' },
   { name: 'Screenhouse',                  url: 'https://screenhouse.nl/', note: 'shirt bedrukking' },
+  { name: 'Paroc',                        url: 'https://www.paroc.com/en' },
 ]
 
 export default function SponsorsSection() {
