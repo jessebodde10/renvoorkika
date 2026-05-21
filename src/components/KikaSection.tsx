@@ -31,9 +31,8 @@ export default function KikaSection() {
         {/* Tekst */}
         <div className="space-y-5 text-white/75 text-lg leading-relaxed">
           <p>
-            Jaarlijks krijgen bijna 600 kinderen in Nederland kanker. De
-            overlevingskans steeg mede dankzij KiKa van 72% naar inmiddels
-            circa 84%. Het doel blijft 100% genezing van kinderkanker.
+            De overlevingskans steeg mede dankzij KiKa van 72% naar inmiddels
+            circa 84%. Maar het doel blijft 100% genezing van kinderkanker.
           </p>
           <p>
             KiKa financiert wetenschappelijk onderzoek naar betere behandelingen

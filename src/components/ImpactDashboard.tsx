@@ -55,7 +55,7 @@ export default function ImpactDashboard() {
                   Mijn volgende marathon
                 </span>
               </div>
-              <p className="text-white/50 text-sm">11 Oktober 2026 · Inzameling loopt</p>
+              <p className="text-white/50 text-sm">11 oktober 2026 · Inzameling loopt</p>
             </div>
             <a
               href={CHICAGO_URL}

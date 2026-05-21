@@ -31,7 +31,7 @@ export default function VerhaalSection() {
               Volgende stop
             </p>
             <p className="text-white font-bold text-xl mb-2">
-              Chicago Marathon · 11 Oktober 2026
+              Chicago Marathon · 11 oktober 2026
             </p>
             <p>
               Mijn doel is om €7.500 op te halen voor kinderkankeronderzoek.
