@@ -1,11 +1,19 @@
 import type { Metadata } from 'next'
-import { Outfit } from 'next/font/google'
+import { Outfit, Oswald } from 'next/font/google'
 import './globals.css'
 
 const outfit = Outfit({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-outfit',
+})
+
+// Condensed, athletisch — voor koppen en race-cijfers (scorebord-gevoel)
+const oswald = Oswald({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['500', '600', '700'],
+  variable: '--font-oswald',
 })
 
 export const metadata: Metadata = {
@@ -39,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="nl" className={outfit.variable}>
+    <html lang="nl" className={`${outfit.variable} ${oswald.variable}`}>
       <body className="bg-kika-navy text-white antialiased font-sans">
         {children}
       </body>

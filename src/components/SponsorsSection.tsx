@@ -95,7 +95,7 @@ export default function SponsorsSection() {
           <p className="text-kika-orange font-semibold uppercase tracking-widest text-sm mb-3">
             Op mijn shirt
           </p>
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-4">
+          <h2 className="font-display uppercase text-4xl md:text-6xl font-bold tracking-tight mb-4">
             Mijn sponsors
           </h2>
           <p className="text-white/60 text-lg max-w-xl mx-auto">
@@ -110,7 +110,7 @@ export default function SponsorsSection() {
               {/* Groepheader */}
               <div className="flex items-center gap-4 mb-6">
                 <div>
-                  <p className="text-white font-extrabold text-lg leading-tight">
+                  <p className="font-display uppercase text-white font-bold text-xl leading-tight tracking-tight">
                     {group.label}
                   </p>
                   <p className="text-white/40 text-sm">{group.city} · {group.year}</p>

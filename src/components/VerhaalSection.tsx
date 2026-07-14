@@ -8,7 +8,7 @@ export default function VerhaalSection() {
           <p className="text-kika-orange font-semibold uppercase tracking-widest text-sm mb-3">
             Mijn verhaal
           </p>
-          <h2 className="text-3xl md:text-4xl font-extrabold">
+          <h2 className="font-display uppercase text-4xl md:text-5xl font-bold tracking-tight">
             Waarom ik ren
           </h2>
         </div>

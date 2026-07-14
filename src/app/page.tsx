@@ -9,6 +9,7 @@ import SponsorSection from '@/components/SponsorSection'
 import SponsorsSection from '@/components/SponsorsSection'
 import MobileNav from '@/components/MobileNav'
 import ScrollToTop from '@/components/ScrollToTop'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <PhotoGallery />
         <SponsorsSection />
         <SponsorSection />
+        <Footer />
       </main>
       <MobileNav />
       <ScrollToTop />

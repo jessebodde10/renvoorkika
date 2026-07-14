@@ -10,28 +10,23 @@ export default function SponsorSection() {
           <p className="text-kika-orange font-semibold uppercase tracking-widest text-sm mb-3">
             Loop met me mee
           </p>
-          <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
-            Mijn Stappen,{' '}
-            <span className="text-kika-orange">jouw Steun!</span>
+          <h2 className="font-display uppercase text-4xl md:text-5xl font-bold leading-[0.95] tracking-tight">
+            Mijn stappen,{' '}
+            <span className="text-kika-orange">jouw steun</span>
           </h2>
         </div>
 
         {/* Tekst */}
         <div className="space-y-5 text-white/75 text-lg leading-relaxed mb-12">
           <p>
-            Stap samen met mij in de strijd tegen kinderkanker! Mijn deelname
-            aan de marathon van Chicago is meer dan alleen een persoonlijke
-            uitdaging; het is een kans om bij te dragen aan een groter doel.
-            Jouw steun door middel van een donatie maakt echt het verschil.
+            Op 11 oktober 2026 sta ik aan de start in Chicago. Mijn doel: €7.500
+            ophalen voor kinderkankeronderzoek. Elke euro die jij geeft gaat
+            rechtstreeks naar KiKa.
           </p>
           <p>
-            Laten we samenwerken om de impact te vergroten en een verschil te
-            maken in de levens van kinderen getroffen door kanker.
-          </p>
-          <p>
-            Elke euro die jij doneert gaat naar KiKa en brengt ons dichterbij de
-            ultieme doelstelling: een wereld waarin 100% van de kinderen met
-            kanker geneest.
+            Doneren kost je een minuut. Voor een kind met kanker betekent het
+            onderzoek, betere behandelingen en een grotere kans om te genezen.
+            Daar loop ik 42 kilometer voor. Doe jij die minuut?
           </p>
         </div>
 

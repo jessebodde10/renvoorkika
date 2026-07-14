@@ -44,7 +44,7 @@ function LegLabel({ leg, align }: { leg: Leg; align: 'center' | 'left' }) {
   return (
     <div className={align === 'center' ? 'text-center' : 'text-left'}>
       <p className="text-white/30 text-xs font-bold tracking-[0.2em] mb-1">ETAPPE {leg.n}</p>
-      <p className="text-white font-extrabold text-lg leading-tight">{leg.city}</p>
+      <p className="font-display uppercase text-white font-bold text-2xl leading-none tracking-tight">{leg.city}</p>
       <p className="text-white/40 text-sm">{leg.date}</p>
       <p className={`text-xs font-semibold mt-1 ${leg.done ? 'text-white/50' : 'text-kika-orange'}`}>
         {leg.status} · {DISTANCE}

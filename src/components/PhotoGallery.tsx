@@ -58,7 +58,7 @@ export default function PhotoGallery() {
           <p className="text-kika-orange font-semibold uppercase tracking-widest text-sm mb-3">
             Herinneringen
           </p>
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-4">
+          <h2 className="font-display uppercase text-4xl md:text-6xl font-bold tracking-tight mb-4">
             Galerij
           </h2>
           <p className="text-white/60 text-lg max-w-xl mx-auto">
