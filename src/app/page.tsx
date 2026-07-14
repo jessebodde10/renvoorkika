@@ -1,5 +1,6 @@
 import NavBar from '@/components/NavBar'
 import HeroSection from '@/components/HeroSection'
+import MarathonRoute from '@/components/MarathonRoute'
 import VerhaalSection from '@/components/VerhaalSection'
 import KikaSection from '@/components/KikaSection'
 import ImpactDashboard from '@/components/ImpactDashboard'
@@ -15,6 +16,7 @@ export default function Home() {
       <NavBar />
       <main className="pb-16 md:pb-0">
         <HeroSection />
+        <MarathonRoute />
         <VerhaalSection />
         <KikaSection />
         <ImpactDashboard />
