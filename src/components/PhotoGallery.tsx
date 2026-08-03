@@ -62,7 +62,7 @@ export default function PhotoGallery() {
             Galerij
           </h2>
           <p className="text-white/60 text-lg max-w-xl mx-auto">
-            Momenten die je nooit vergeet. Op de weg en in je hart.
+            Momenten die je nooit vergeet.
           </p>
         </div>
 

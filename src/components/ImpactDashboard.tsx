@@ -66,7 +66,7 @@ export default function ImpactDashboard() {
               className="inline-flex items-center gap-2 text-kika-orange font-semibold
                          hover:text-orange-400 transition-colors duration-200 self-start md:self-auto text-sm"
             >
-              Steun deze missie
+              Doneer voor Chicago
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>

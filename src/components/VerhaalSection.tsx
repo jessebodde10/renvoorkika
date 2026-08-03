@@ -25,16 +25,15 @@ export default function VerhaalSection() {
               kunnen.
             </p>
             <p>
-              In 2024 finishte ik de marathon van New York, in 2025 liep ik door
-              de straten van Berlijn. Beide keren voor KiKa, want elk jaar krijgen
-              bijna 600 kinderen in Nederland kanker en 1 op de 5 haalt het niet.
-              Dat zijn geen statistieken. Dat zijn kinderen.
+              In 2024 finishte ik in New York, in 2025 liep ik door de straten
+              van Berlijn. Beide keren voor KiKa, want elk jaar krijgen bijna
+              600 kinderen in Nederland kanker en 1 op de 6 haalt het niet.
+              Dat is er één te veel.
             </p>
             <p>
               Nu staat Chicago op het programma. Op 11 oktober 2026 loop ik mijn
               derde grote marathon, met een doel van €7.500 voor
-              kinderkankeronderzoek. Elke euro die jij doneert gaat rechtstreeks
-              naar KiKa en brengt ons een stap dichter bij 100% genezing.
+              kinderkankeronderzoek.
             </p>
 
             {/* Chicago-blok */}

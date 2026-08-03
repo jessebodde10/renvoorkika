@@ -25,9 +25,9 @@ export default function DonateSection() {
             rechtstreeks naar KiKa.
           </p>
           <p>
-            Doneren kost je een minuut. Voor een kind met kanker betekent het
+            Doneren kost je een minuut. Voor een kind met kanker betekent het:
             onderzoek, betere behandelingen en een grotere kans om te genezen.
-            Daar loop ik 42 kilometer voor. Doe jij die minuut?
+            Daar loop ik 42 kilometer voor. Neem jij die minuut?
           </p>
         </div>
 

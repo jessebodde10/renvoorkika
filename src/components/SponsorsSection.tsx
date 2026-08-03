@@ -111,7 +111,7 @@ export default function SponsorsSection() {
                   <p className="font-display uppercase text-white text-xl leading-tight tracking-tight">
                     Shirtsponsors {group.city}
                   </p>
-                  <p className="text-white/40 text-sm">{group.city} · {group.year}</p>
+                  <p className="text-white/40 text-sm">{group.year}</p>
                 </div>
                 {group.badge && (
                   <span className="text-kika-orange text-xs font-semibold border border-kika-orange/40

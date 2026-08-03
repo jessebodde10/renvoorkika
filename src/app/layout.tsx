@@ -26,11 +26,11 @@ export const metadata: Metadata = {
   ),
   title: 'Jesse rent voor KiKa',
   description:
-    'Jesse Bodde (27) rent marathons voor KiKa – New York 2024, Berlijn 2025, Chicago 2026. Steun zijn actie voor kinderkankeronderzoek.',
+    'Jesse Bodde rent marathons voor KiKa: New York 2024, Berlijn 2025, Chicago 2026. Steun zijn actie voor kinderkankeronderzoek.',
   openGraph: {
     title: 'Jesse rent voor KiKa',
     description:
-      'Jesse Bodde (27) rent drie wereldmarathons voor kinderkankeronderzoek. Doneer en help hem zijn doel van €7.500 te bereiken.',
+      'Jesse Bodde rent drie wereldmarathons voor kinderkankeronderzoek. Doneer en help hem zijn doel van €7.500 te bereiken.',
     images: [{ url: '/berlijn-jesse.jpg', width: 1200, height: 630, alt: 'Jesse Bodde in Berlijn' }],
     locale: 'nl_NL',
     type: 'website',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Jesse rent voor KiKa',
-    description: 'Jesse Bodde (27) rent drie wereldmarathons voor kinderkankeronderzoek. Doneer nu.',
+    description: 'Jesse Bodde rent drie wereldmarathons voor kinderkankeronderzoek. Doneer nu.',
     images: ['/berlijn-jesse.jpg'],
   },
 }

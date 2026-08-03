@@ -82,7 +82,7 @@ export default function MarathonRoute() {
             De route
           </span>
           <span className="h-px flex-1 bg-white/10" />
-          <span className="text-white/30 text-sm font-medium">Drie steden · één missie</span>
+          <span className="text-white/30 text-sm font-medium">Van New York naar Chicago</span>
         </div>
 
         {/* Desktop: horizontale route */}
