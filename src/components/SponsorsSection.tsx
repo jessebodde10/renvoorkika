@@ -47,7 +47,6 @@ const SPONSOR_GROUPS: SponsorGroup[] = [
     label: 'Shirtsponsors Chicago',
     sponsors: [
       { name: 'Paroc GmbH',   url: 'https://www.paroc.com/en' },
-      { name: 'Centuristics', url: 'https://centuristics.com/' },
     ],
   },
 ]
