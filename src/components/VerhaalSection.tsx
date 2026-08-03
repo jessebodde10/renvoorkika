@@ -27,7 +27,7 @@ export default function VerhaalSection() {
             <p>
               In 2024 finishte ik in New York, in 2025 liep ik door de straten
               van Berlijn. Beide keren voor KiKa, want elk jaar krijgen bijna
-              600 kinderen in Nederland kanker en 1 op de 6 haalt het niet.
+              600 kinderen in Nederland kanker en 1 op de 5 haalt het niet.
               Dat is er één te veel.
             </p>
             <p>

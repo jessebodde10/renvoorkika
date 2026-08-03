@@ -33,8 +33,8 @@ export default function KikaSection() {
         {/* Tekst */}
         <div className="space-y-5 text-white/75 text-lg leading-relaxed">
           <p>
-            De overlevingskans steeg mede dankzij KiKa van 72% naar inmiddels
-            circa 84%. Maar het doel blijft 100% genezing van kinderkanker.
+            De overlevingskans steeg mede dankzij KiKa van 72% naar 81%.
+            Maar het doel blijft 100% genezing van kinderkanker.
           </p>
           <p>
             KiKa financiert wetenschappelijk onderzoek naar betere behandelingen
@@ -55,14 +55,14 @@ export default function KikaSection() {
             Meer lezen op kika.nl →
           </a>
           <a
-            href="https://www.kika.nl/over-kika/missie-visie-strategie/"
+            href="https://www.kika.nl/wat-doet-kika"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/40 text-sm hover:text-white/70 transition-colors duration-150
                        focus:outline-none focus:ring-2 focus:ring-white/30 rounded"
-            aria-label="Bron: KiKa missie, visie en strategie"
+            aria-label="Bron: wat doet KiKa, op kika.nl"
           >
-            Bron: kika.nl/missie-visie-strategie
+            Bron: kika.nl/wat-doet-kika
           </a>
         </div>
 
