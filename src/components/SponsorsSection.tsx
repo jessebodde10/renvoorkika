@@ -9,7 +9,8 @@ type Sponsor = {
 type SponsorGroup = {
   city: string
   year: string
-  label: string
+  /** Optioneel label, bijv. bij een race die nog moet komen. */
+  badge?: string
   sponsors: Sponsor[]
 }
 
@@ -17,7 +18,6 @@ const SPONSOR_GROUPS: SponsorGroup[] = [
   {
     city: 'New York',
     year: '2024',
-    label: 'Shirtsponsors New York',
     sponsors: [
       { name: 'AGS',                  url: 'https://www.ags.nl/' },
       { name: 'Paroc GmbH',           url: 'https://www.paroc.com/en' },
@@ -32,7 +32,6 @@ const SPONSOR_GROUPS: SponsorGroup[] = [
   {
     city: 'Berlijn',
     year: '2025',
-    label: 'Shirtsponsors Berlijn',
     sponsors: [
       { name: 'AGS',                  url: 'https://www.ags.nl/' },
       { name: 'Paroc GmbH',           url: 'https://www.paroc.com/en' },
@@ -44,7 +43,7 @@ const SPONSOR_GROUPS: SponsorGroup[] = [
   {
     city: 'Chicago',
     year: '2026',
-    label: 'Shirtsponsors Chicago',
+    badge: 'Tot nu toe',
     sponsors: [
       { name: 'Paroc GmbH',   url: 'https://www.paroc.com/en' },
     ],
@@ -110,14 +109,14 @@ export default function SponsorsSection() {
               <div className="flex items-center gap-4 mb-6">
                 <div>
                   <p className="font-display uppercase text-white font-bold text-xl leading-tight tracking-tight">
-                    {group.label}
+                    Shirtsponsors {group.city}
                   </p>
                   <p className="text-white/40 text-sm">{group.city} · {group.year}</p>
                 </div>
-                {group.city === 'Chicago' && (
+                {group.badge && (
                   <span className="text-kika-orange text-xs font-semibold border border-kika-orange/40
                                    px-2.5 py-0.5 rounded-full whitespace-nowrap">
-                    Tot nu toe
+                    {group.badge}
                   </span>
                 )}
                 <div className="flex-1 h-px bg-white/10" />

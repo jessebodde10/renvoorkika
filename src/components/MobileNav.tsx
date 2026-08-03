@@ -1,8 +1,7 @@
 'use client'
 
 import { Heart, BookOpen, BarChart2 } from 'lucide-react'
-
-const CHICAGO_URL = 'https://supporta.com/19cn/ipgbtyhbi7'
+import { DONATE_URL } from '@/config/site'
 
 export default function MobileNav() {
   return (
@@ -22,7 +21,7 @@ export default function MobileNav() {
       </a>
 
       <a
-        href={CHICAGO_URL}
+        href={DONATE_URL}
         target="_blank"
         rel="noopener noreferrer"
         className="flex-1 flex flex-col items-center justify-center gap-1 py-3

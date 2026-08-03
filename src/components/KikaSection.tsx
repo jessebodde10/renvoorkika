@@ -1,3 +1,5 @@
+import { KIKA_URL } from '@/config/site'
+
 export default function KikaSection() {
   return (
     <section id="kika" className="bg-kika-navy py-24 px-4">
@@ -44,7 +46,7 @@ export default function KikaSection() {
         {/* Links */}
         <div className="mt-10 flex flex-wrap gap-4 items-center">
           <a
-            href="https://www.kika.nl"
+            href={KIKA_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-kika-orange font-semibold hover:text-orange-400 transition-colors duration-150

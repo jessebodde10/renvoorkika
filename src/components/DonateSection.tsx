@@ -1,8 +1,9 @@
 import { ExternalLink, ArrowRight } from 'lucide-react'
+import { DONATE_URL, KIKA_URL } from '@/config/site'
 
-export default function SponsorSection() {
+export default function DonateSection() {
   return (
-    <section id="sponsor" className="bg-kika-navy py-24 px-4">
+    <section id="doneer" className="bg-kika-navy py-24 px-4">
       <div className="max-w-2xl mx-auto">
 
         {/* Persoonlijke aanspreking */}
@@ -36,7 +37,7 @@ export default function SponsorSection() {
         {/* Knoppen */}
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <a
-            href="https://supporta.com/19cn/ipgbtyhbi7"
+            href={DONATE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-kika-orange text-white font-bold
@@ -49,7 +50,7 @@ export default function SponsorSection() {
           </a>
 
           <a
-            href="https://www.kika.nl"
+            href={KIKA_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-white/50 hover:text-white/80

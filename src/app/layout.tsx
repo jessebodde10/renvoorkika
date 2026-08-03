@@ -12,7 +12,7 @@ const outfit = Outfit({
 const oswald = Oswald({
   subsets: ['latin'],
   display: 'swap',
-  weight: ['500', '600', '700'],
+  weight: ['600', '700'],
   variable: '--font-oswald',
 })
 

@@ -1,14 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
-
-const CHICAGO_URL = 'https://supporta.com/19cn/ipgbtyhbi7'
-
-const NAV = [
-  { label: 'Mijn verhaal', href: '#verhaal' },
-  { label: 'Over KiKa',    href: '#kika' },
-  { label: 'De cijfers',   href: '#impact' },
-  { label: 'Galerij',      href: '#galerij' },
-  { label: 'Sponsors',     href: '#sponsors' },
-]
+import { DONATE_URL, KIKA_URL, SECTIONS } from '@/config/site'
 
 export default function Footer() {
   return (
@@ -33,13 +24,13 @@ export default function Footer() {
             <p className="text-white/30 text-xs font-bold uppercase tracking-widest mb-2">
               Op deze pagina
             </p>
-            {NAV.map((item) => (
+            {SECTIONS.map((section) => (
               <a
-                key={item.href}
-                href={item.href}
+                key={section.id}
+                href={`#${section.id}`}
                 className="text-white/60 hover:text-white transition-colors duration-150 w-fit"
               >
-                {item.label}
+                {section.long}
               </a>
             ))}
           </nav>
@@ -50,7 +41,7 @@ export default function Footer() {
               Steun de actie
             </p>
             <a
-              href={CHICAGO_URL}
+              href={DONATE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 bg-kika-orange text-white font-bold
@@ -60,7 +51,7 @@ export default function Footer() {
               <ArrowUpRight className="w-4 h-4" />
             </a>
             <a
-              href="https://www.kika.nl"
+              href={KIKA_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-white/50 hover:text-white/80

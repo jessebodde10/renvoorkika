@@ -1,5 +1,6 @@
 import { Trophy, User, ArrowRight } from 'lucide-react'
 import AnimatedCounter from './AnimatedCounter'
+import { DONATE_URL } from '@/config/site'
 
 type RaceEntry = {
   city: string
@@ -22,8 +23,6 @@ const PAST_RACES: RaceEntry[] = [
     personal: 4250,
   },
 ]
-
-const CHICAGO_URL = 'https://supporta.com/19cn/ipgbtyhbi7'
 
 export default function ImpactDashboard() {
   const personalTotal = PAST_RACES.reduce((sum, r) => sum + r.personal, 0)
@@ -61,7 +60,7 @@ export default function ImpactDashboard() {
               <p className="text-white/50 text-sm">11 oktober 2026 · Inzameling loopt</p>
             </div>
             <a
-              href={CHICAGO_URL}
+              href={DONATE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-kika-orange font-semibold
@@ -96,7 +95,7 @@ export default function ImpactDashboard() {
               <div className="p-8">
                 <div className="flex items-baseline gap-3 mb-8">
                   <h3 className="font-display uppercase text-3xl font-bold tracking-tight">{race.city}</h3>
-                  <p className="font-display text-white/40 text-lg">{race.year}</p>
+                  <p className="font-display font-semibold text-white/40 text-lg">{race.year}</p>
                 </div>
 
                 <div className="space-y-5">

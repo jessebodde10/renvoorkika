@@ -5,7 +5,7 @@ import VerhaalSection from '@/components/VerhaalSection'
 import KikaSection from '@/components/KikaSection'
 import ImpactDashboard from '@/components/ImpactDashboard'
 import PhotoGallery from '@/components/PhotoGallery'
-import SponsorSection from '@/components/SponsorSection'
+import DonateSection from '@/components/DonateSection'
 import SponsorsSection from '@/components/SponsorsSection'
 import MobileNav from '@/components/MobileNav'
 import ScrollToTop from '@/components/ScrollToTop'
@@ -23,7 +23,7 @@ export default function Home() {
         <ImpactDashboard />
         <PhotoGallery />
         <SponsorsSection />
-        <SponsorSection />
+        <DonateSection />
         <Footer />
       </main>
       <MobileNav />

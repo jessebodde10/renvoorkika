@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
+import { DONATE_URL, SECTIONS } from '@/config/site'
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false)
@@ -27,25 +28,19 @@ export default function NavBar() {
         </a>
 
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-white/70">
-          <a href="#verhaal" className="hover:text-white transition-colors duration-150">
-            Verhaal
-          </a>
-          <a href="#kika" className="hover:text-white transition-colors duration-150">
-            KiKa
-          </a>
-          <a href="#impact" className="hover:text-white transition-colors duration-150">
-            Impact
-          </a>
-          <a href="#galerij" className="hover:text-white transition-colors duration-150">
-            Galerij
-          </a>
-          <a href="#sponsors" className="hover:text-white transition-colors duration-150">
-            Sponsors
-          </a>
+          {SECTIONS.map((section) => (
+            <a
+              key={section.id}
+              href={`#${section.id}`}
+              className="hover:text-white transition-colors duration-150"
+            >
+              {section.short}
+            </a>
+          ))}
         </nav>
 
         <a
-          href="https://supporta.com/19cn/ipgbtyhbi7"
+          href={DONATE_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 bg-kika-orange text-white font-bold

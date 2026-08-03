@@ -59,7 +59,7 @@ export default function VerhaalSection() {
               alt="Jesse Bodde met medaille na de finish"
               fill
               className="object-cover object-top"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, 512px"
             />
           </div>
 

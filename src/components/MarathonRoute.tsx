@@ -4,21 +4,26 @@ import { useEffect, useRef, useState } from 'react'
 import { Check, Flag } from 'lucide-react'
 
 type Leg = {
-  n: string
   city: string
   date: string
-  status: string
   done: boolean
 }
 
 const LEGS: Leg[] = [
-  { n: '01', city: 'New York', date: 'nov 2024',    status: 'Gefinisht', done: true  },
-  { n: '02', city: 'Berlijn',  date: 'sep 2025',    status: 'Gefinisht', done: true  },
-  { n: '03', city: 'Chicago',  date: '11 okt 2026', status: 'Volgende',  done: false },
+  { city: 'New York', date: 'nov 2024',    done: true  },
+  { city: 'Berlijn',  date: 'sep 2025',    done: true  },
+  { city: 'Chicago',  date: '11 okt 2026', done: false },
 ]
 
 // Elke marathon is exact 42,195 km — terugkerend motief.
 const DISTANCE = '42,195 KM'
+
+// De oranje lijn loopt tot de laatst gefinishte etappe. Volgt de data,
+// zodat een extra marathon of een nieuwe finish vanzelf klopt.
+const DONE_COUNT = LEGS.filter((leg) => leg.done).length
+const PROGRESS = LEGS.length > 1
+  ? `${(Math.max(0, DONE_COUNT - 1) / (LEGS.length - 1)) * 100}%`
+  : '0%'
 
 function Marker({ leg }: { leg: Leg }) {
   if (leg.done) {
@@ -40,14 +45,16 @@ function Marker({ leg }: { leg: Leg }) {
   )
 }
 
-function LegLabel({ leg, align }: { leg: Leg; align: 'center' | 'left' }) {
+function LegLabel({ leg, index, align }: { leg: Leg; index: number; align: 'center' | 'left' }) {
   return (
     <div className={align === 'center' ? 'text-center' : 'text-left'}>
-      <p className="text-white/30 text-xs font-bold tracking-[0.2em] mb-1">ETAPPE {leg.n}</p>
+      <p className="text-white/30 text-xs font-bold tracking-[0.2em] mb-1">
+        ETAPPE {String(index + 1).padStart(2, '0')}
+      </p>
       <p className="font-display uppercase text-white font-bold text-2xl leading-none tracking-tight">{leg.city}</p>
       <p className="text-white/40 text-sm">{leg.date}</p>
       <p className={`text-xs font-semibold mt-1 ${leg.done ? 'text-white/50' : 'text-kika-orange'}`}>
-        {leg.status} · {DISTANCE}
+        {leg.done ? 'Gefinisht' : 'Volgende'} · {DISTANCE}
       </p>
     </div>
   )
@@ -89,15 +96,15 @@ export default function MarathonRoute() {
             <div
               className="absolute top-1/2 -translate-y-1/2 left-0 h-0.5 bg-kika-orange
                          transition-all duration-[1400ms] ease-out"
-              style={{ width: inView ? '50%' : '0%' }}
+              style={{ width: inView ? PROGRESS : '0%' }}
             />
           </div>
           {/* Knopen */}
           <div className="relative flex justify-between">
-            {LEGS.map((leg) => (
+            {LEGS.map((leg, i) => (
               <div key={leg.city} className="flex flex-col items-center gap-4 w-40">
                 <Marker leg={leg} />
-                <LegLabel leg={leg} align="center" />
+                <LegLabel leg={leg} index={i} align="center" />
               </div>
             ))}
           </div>
@@ -110,14 +117,14 @@ export default function MarathonRoute() {
             <div
               className="absolute left-1/2 -translate-x-1/2 top-0 w-0.5 bg-kika-orange
                          transition-all duration-[1400ms] ease-out"
-              style={{ height: inView ? '50%' : '0%' }}
+              style={{ height: inView ? PROGRESS : '0%' }}
             />
           </div>
           <div className="relative flex flex-col gap-10">
-            {LEGS.map((leg) => (
+            {LEGS.map((leg, i) => (
               <div key={leg.city} className="flex items-center gap-5">
                 <Marker leg={leg} />
-                <LegLabel leg={leg} align="left" />
+                <LegLabel leg={leg} index={i} align="left" />
               </div>
             ))}
           </div>

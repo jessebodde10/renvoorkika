@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { ChevronDown, ArrowRight } from 'lucide-react'
-
-const CHICAGO_URL = 'https://supporta.com/19cn/ipgbtyhbi7'
+import { DONATE_URL } from '@/config/site'
 
 export default function HeroSection() {
   return (
@@ -60,7 +59,7 @@ export default function HeroSection() {
           style={{ animationDelay: '0.75s' }}
         >
           <a
-            href={CHICAGO_URL}
+            href={DONATE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-kika-orange text-white font-bold text-lg px-10 py-4
