@@ -10,4 +10,35 @@
   * {
     box-sizing: border-box;
   }
+
+  /*
+   * Respecteer de systeeminstelling "minder beweging".
+   * De site heeft een trage Ken Burns-zoom, gestaffelde fade-ups, een
+   * pulserende Chicago-marker en een stuiterende pijl; dat is naar voor
+   * bezoekers met bijvoorbeeld migraine of evenwichtsklachten.
+   * Animaties worden niet verwijderd maar direct afgemaakt, zodat de
+   * eindtoestand (zichtbare tekst, gevulde routelijn) altijd klopt.
+   */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+      /*
+       * De hero staffelt zijn regels met inline animation-delay tot 1,1s.
+       * Zonder deze regel houdt fill-mode `both` die tekst al die tijd op
+       * opacity 0 — dan is de hero ruim een seconde leeg. !important in een
+       * stylesheet wint van een inline style, dus dit vangt ze allemaal af.
+       */
+      animation-delay: 0ms !important;
+      transition-delay: 0ms !important;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { prefersReducedMotion } from '@/lib/motion'
 
 interface AnimatedCounterProps {
   target: number
@@ -26,6 +27,9 @@ export default function AnimatedCounter({
     if (animated.current) return
     const el = ref.current
     if (!el) return
+
+    // Bij "minder beweging" blijft het eindbedrag gewoon staan.
+    if (prefersReducedMotion()) return
 
     const observer = new IntersectionObserver(
       ([entry]) => {

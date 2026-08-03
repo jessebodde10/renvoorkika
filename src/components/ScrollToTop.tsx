@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { ChevronUp } from 'lucide-react'
+import { prefersReducedMotion } from '@/lib/motion'
 
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false)
@@ -16,7 +17,12 @@ export default function ScrollToTop() {
 
   return (
     <button
-      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      onClick={() =>
+        window.scrollTo({
+          top: 0,
+          behavior: prefersReducedMotion() ? 'auto' : 'smooth',
+        })
+      }
       className="fixed bottom-24 right-4 md:bottom-8 md:right-6 z-40
                  bg-kika-navy-light border border-white/20 text-white/70
                  hover:text-white hover:border-kika-orange/50 hover:bg-kika-navy
