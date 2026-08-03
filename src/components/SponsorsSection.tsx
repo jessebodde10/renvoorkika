@@ -36,7 +36,7 @@ const SPONSOR_GROUPS: SponsorGroup[] = [
       { name: 'AGS',                  url: 'https://www.ags.nl/' },
       { name: 'Paroc GmbH',           url: 'https://www.paroc.com/en' },
       { name: 'Centuristics',         url: 'https://centuristics.com/' },
-      { name: 'SL Freelance Solutions' },
+      { name: 'SL Freelance Solutions', url: 'https://www.sl-freelancesolution.nl/' },
       { name: 'Screenhouse',          url: 'https://screenhouse.nl/', note: 'shirt bedrukking' },
     ],
   },
