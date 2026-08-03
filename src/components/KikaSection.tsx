@@ -10,7 +10,7 @@ export default function KikaSection() {
           <p className="text-kika-orange font-semibold uppercase tracking-widest text-sm mb-3">
             Het goede doel
           </p>
-          <h2 className="font-display uppercase text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          <h2 className="font-display uppercase text-4xl md:text-5xl tracking-tight mb-4">
             Stichting Kinderen Kankervrij
           </h2>
           <p className="text-white/60 text-lg max-w-xl mx-auto">

@@ -38,7 +38,7 @@ export default function HeroSection() {
         </div>
 
         {/* Titel — twee regels met eigen vertraging */}
-        <h1 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-6">
+        <h1 className="font-display uppercase text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight mb-6">
           <span
             className="block animate-fade-up"
             style={{ animationDelay: '0.35s' }}

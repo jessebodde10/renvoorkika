@@ -11,7 +11,7 @@ export default function DonateSection() {
           <p className="text-kika-orange font-semibold uppercase tracking-widest text-sm mb-3">
             Loop met me mee
           </p>
-          <h2 className="font-display uppercase text-4xl md:text-5xl font-bold leading-[0.95] tracking-tight">
+          <h2 className="font-display uppercase text-4xl md:text-5xl leading-[0.95] tracking-tight">
             Mijn stappen,{' '}
             <span className="text-kika-orange">jouw steun</span>
           </h2>

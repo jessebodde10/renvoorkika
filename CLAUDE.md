@@ -82,11 +82,13 @@ optional `badge` field rather than a city-name comparison.
 Two faces, wired in `layout.tsx` and `tailwind.config.ts`:
 
 - `font-sans` → Outfit, body copy
-- `font-display` → Oswald condensed, used **uppercase** for headings, city names
-  and money figures for a race-poster/scoreboard feel
+- `font-display` → Bebas Neue condensed, used for headings, city names and money
+  figures for a race-poster/scoreboard feel
 
-Only Oswald weights **600 and 700** are loaded. Using `font-display` without a
-weight class falls back to 400, which the browser synthesizes and renders wrong.
+**Bebas Neue ships a single weight (400) and only uppercase glyphs.** Never put
+`font-bold`, `font-semibold` or `font-extrabold` on a `font-display` element —
+the browser then synthesizes a fake bold that looks smeared. Size and colour
+carry the hierarchy instead.
 
 Orange (`kika-orange`) is reserved for the donation action and the live Chicago
 leg. Finished races use muted white. Spreading orange everywhere flattens the

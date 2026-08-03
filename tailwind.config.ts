@@ -17,7 +17,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-outfit)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-oswald)', 'var(--font-outfit)', 'sans-serif'],
+        display: ['var(--font-bebas)', 'var(--font-outfit)', 'sans-serif'],
       },
       keyframes: {
         'fade-up': {

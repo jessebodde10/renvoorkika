@@ -10,7 +10,7 @@ export default function Footer() {
 
           {/* Merk + oproep */}
           <div>
-            <p className="font-display uppercase text-2xl font-bold tracking-tight mb-3">
+            <p className="font-display uppercase text-2xl tracking-tight mb-3">
               <span className="text-kika-orange">Jesse</span> rent voor KiKa
             </p>
             <p className="text-white/50 leading-relaxed max-w-sm">

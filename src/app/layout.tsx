@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Outfit, Oswald } from 'next/font/google'
+import { Outfit, Bebas_Neue } from 'next/font/google'
 import './globals.css'
 
 const outfit = Outfit({
@@ -8,12 +8,14 @@ const outfit = Outfit({
   variable: '--font-outfit',
 })
 
-// Condensed, athletisch — voor koppen en race-cijfers (scorebord-gevoel)
-const oswald = Oswald({
+// Condensed, athletisch — voor koppen en race-cijfers (scorebord-gevoel).
+// Bebas Neue heeft maar één gewicht en alleen kapitalen: gebruik geen
+// font-bold/font-semibold ernaast, anders maakt de browser er nepvet van.
+const bebas = Bebas_Neue({
   subsets: ['latin'],
   display: 'swap',
-  weight: ['600', '700'],
-  variable: '--font-oswald',
+  weight: ['400'],
+  variable: '--font-bebas',
 })
 
 export const metadata: Metadata = {
@@ -47,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="nl" className={`${outfit.variable} ${oswald.variable}`}>
+    <html lang="nl" className={`${outfit.variable} ${bebas.variable}`}>
       <body className="bg-kika-navy text-white antialiased font-sans">
         {children}
       </body>

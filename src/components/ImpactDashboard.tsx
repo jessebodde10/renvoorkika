@@ -38,7 +38,7 @@ export default function ImpactDashboard() {
             </span>
             <span className="h-px flex-1 bg-white/10" />
           </div>
-          <h2 className="font-display uppercase text-4xl md:text-6xl font-bold tracking-tight leading-[0.95] mb-3">
+          <h2 className="font-display uppercase text-4xl md:text-6xl tracking-tight leading-[0.95] mb-3">
             Kilometers, euro&apos;s, impact
           </h2>
           <p className="text-white/60 text-lg max-w-xl">
@@ -52,7 +52,7 @@ export default function ImpactDashboard() {
           <div className="p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <h3 className="font-display uppercase text-3xl font-bold tracking-tight">Chicago</h3>
+                <h3 className="font-display uppercase text-3xl tracking-tight">Chicago</h3>
                 <span className="text-kika-orange text-xs font-semibold border border-kika-orange/40 px-2.5 py-0.5 rounded-full">
                   Mijn volgende marathon
                 </span>
@@ -78,7 +78,7 @@ export default function ImpactDashboard() {
             <span className="md:hidden">Opgehaald voor KiKa</span>
             <span className="hidden md:inline">Persoonlijk opgehaald voor KiKa</span>
           </p>
-          <p className="font-display text-5xl md:text-7xl font-bold tracking-tight">
+          <p className="font-display text-5xl md:text-7xl tracking-tight">
             <AnimatedCounter target={personalTotal} prefix="€" duration={2500} />
           </p>
         </div>
@@ -94,8 +94,8 @@ export default function ImpactDashboard() {
 
               <div className="p-8">
                 <div className="flex items-baseline gap-3 mb-8">
-                  <h3 className="font-display uppercase text-3xl font-bold tracking-tight">{race.city}</h3>
-                  <p className="font-display font-semibold text-white/40 text-lg">{race.year}</p>
+                  <h3 className="font-display uppercase text-3xl tracking-tight">{race.city}</h3>
+                  <p className="font-display text-white/40 text-lg">{race.year}</p>
                 </div>
 
                 <div className="space-y-5">
@@ -104,7 +104,7 @@ export default function ImpactDashboard() {
                       <Trophy className="w-4 h-4 text-kika-orange" />
                       <span className="text-sm font-medium">Team totaal voor KiKa</span>
                     </div>
-                    <span className="font-display text-3xl font-bold text-kika-orange tracking-tight">
+                    <span className="font-display text-3xl text-kika-orange tracking-tight">
                       <AnimatedCounter
                         target={race.kikaTotal}
                         prefix="€"
@@ -122,7 +122,7 @@ export default function ImpactDashboard() {
                         Mijn persoonlijke bijdrage
                       </span>
                     </div>
-                    <span className="font-display text-2xl font-semibold tracking-tight">
+                    <span className="font-display text-2xl tracking-tight">
                       <AnimatedCounter
                         target={race.personal}
                         prefix="€"
