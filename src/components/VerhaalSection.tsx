@@ -32,8 +32,8 @@ export default function VerhaalSection() {
               Dat is er één te veel.
             </p>
             <p>
-              Nu staat Chicago op het programma. Op 11 oktober 2026 loop ik mijn
-              derde grote marathon voor KiKa, met een doel van €7.500 voor
+              Nu staat Chicago op het programma. Daar loop ik mijn derde grote
+              marathon voor KiKa, met een doel van €7.500 voor
               kinderkankeronderzoek.
             </p>
 
