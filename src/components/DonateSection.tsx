@@ -9,7 +9,7 @@ export default function DonateSection() {
         {/* Persoonlijke aanspreking */}
         <div className="text-center mb-12">
           <p className="text-kika-orange font-semibold uppercase tracking-widest text-sm mb-3">
-            Loop met me mee
+            Loop met mij mee
           </p>
           <h2 className="font-display uppercase text-4xl md:text-5xl leading-[0.95] tracking-tight">
             Mijn stappen,{' '}
@@ -20,8 +20,8 @@ export default function DonateSection() {
         {/* Tekst */}
         <div className="space-y-5 text-white/75 text-lg leading-relaxed mb-12">
           <p>
-            Op 11 oktober 2026 sta ik aan de start in Chicago. Mijn doel: €7.500
-            ophalen voor kinderkankeronderzoek. Elke euro die jij geeft gaat
+            Op 11 oktober 2026 sta ik aan de start van de Chicago Marathon.
+            Mijn doel: €7.500 ophalen voor kinderkankeronderzoek. Elke euro die jij geeft gaat
             rechtstreeks naar KiKa.
           </p>
           <p>

@@ -97,7 +97,7 @@ export default function SponsorsSection() {
             Mijn sponsors
           </h2>
           <p className="text-white/60 text-lg max-w-xl mx-auto">
-            Zij maken het mogelijk. Dankzij hun steun loop ik met trots hun naam op mijn shirt.
+            Zij maken het mogelijk. Dankzij hun steun draag ik met trots hun naam op mijn shirt.
           </p>
         </div>
 
